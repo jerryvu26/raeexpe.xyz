@@ -1,0 +1,45 @@
+name: ✨ Feature request
+description: Suggestions for improving the project
+labels: ["Enhancement"]
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: |
+        Purpose of the feature - if it solves a problem, or if it benefits the website in a way.
+      placeholder: |
+        I believe this feature solves an underlying problem with your site as a whole...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+      description: What would you like to see as a solution to the purpose specified by you above?
+      placeholder: |
+        Here, simply push this code into your header. It's that easy!
+    validations:
+      required: true
+  - type: textarea
+    id: existing-cons
+    attributes:
+      label: Why are currently available methods not sufficient?
+      description: |
+        Please evaluate the existing methods to your needs.
+        If something you're suggesting is already possible, then please elaborate why the currently available solutions are not sufficient.
+        If it's not possible yet, then please explain why it should be.
+      placeholder: |
+        The website is simply broken if this snippet of code isn't added!
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional info
+      description: Everything else you consider worthy that hasn't been asked above.
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        #### Thank you for taking the time to fill out this improvement idea.
