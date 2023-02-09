@@ -1,0 +1,96 @@
+name: 🪲 Bug report
+description: Unexpected website behavior (Coding error, Design error, etc.)
+labels: ["Bug"]
+body:
+  - type: checkboxes
+    id: useragent-browser
+    attributes:
+      label: Browser
+      description: Which browser(s) are you encountering this bug on? (IE is unsupported)
+      options:
+        - label: Chrome and other Chromium-based browsers
+          required: false
+        - label: Brave
+          required: false
+        - label: Opera
+          required: false
+        - label: Firefox
+          required: false
+        - label: Edge (Chromium)
+          required: false
+        - label: Edge (EdgeHTML)
+          required: false
+        - label: Other, please specify below
+          required: false
+  - type: checkboxes
+    id: useragent-os
+    attributes:
+      label: Operating System
+      description: Which OS(es) are you encountering this bug on?
+      options:
+        - label: Windows
+          required: false
+        - label: macOS
+          required: false
+        - label: Linux
+          required: false
+        - label: iOS
+          required: false
+        - label: Android
+          required: false
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug description
+      description: Short explanation of what you were going to do.
+      placeholder: |
+        I tried to tell a joke in the comments, but I was blocked!
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: |
+        I expected to be able to comment!
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+      placeholder: |
+        The comment plugin blocked me, and now I can't submit anything!
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: |
+        Every command or action that happened after opening the website, which leads to the bug.
+        Screenshots or videos of the problem and/or the steps to reproduce is much appreciated.
+      placeholder: |
+        1. Open the website and go to a page that has comments enabled.
+        2. Try to send a comment
+        3. I'm blocked!
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: Possible reason/solution
+      description: |
+        Not mandatory of course, but you can suggest a fix/reason for the bug.
+      placeholder: |
+        The plugin might be detecting an odd IP from my VPN?
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional info
+      description: Everything else you consider worthy that hasn't been asked above.
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        #### Thank you for taking the time to fill out this bug report.
