@@ -16,6 +16,8 @@ body:
           required: false
         - label: Firefox
           required: false
+        - label: Safari and all iOS browsers
+          required: false
         - label: Edge (Chromium)
           required: false
         - label: Edge (EdgeHTML)
